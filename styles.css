@@ -4,10 +4,11 @@
   --card: #1a4055;
   --white: #f7fafb;
   --muted: #b5c1c7;
-  --orange: #e59635;
-  --cyan: #4191a9;
-  --teal: #60a7a4;
-  --brand-blue: #306f97;
+  --cyan: #1597a5;
+  --teal: #86c9bc;
+  --brand-blue: #087694;
+  --brand-blue-hover: #06627b;
+  --accent: var(--teal);
   --border: rgba(255, 255, 255, .12);
   --radius: 20px
 }
@@ -50,7 +51,7 @@ img {
 }
 
 ::selection {
-  background: var(--orange);
+  background: var(--accent);
   color: #061521
 }
 
@@ -61,10 +62,10 @@ img {
 
 .eyebrow {
   text-transform: uppercase;
-  color: var(--orange);
+  color: var(--accent);
   font-size: 12px;
   letter-spacing: .23em;
-  font-weight: 800
+  font-weight: 500
 }
 
 .section {
@@ -76,14 +77,14 @@ h1,
 h2,
 h3,
 .number {
-  font-family: 'Barlow Condensed', Impact, sans-serif;
-  text-transform: uppercase;
-  line-height: .96;
-  letter-spacing: .005em
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.035em
 }
 
 .section-title {
-  font-size: clamp(48px, 7vw, 82px);
+  font-size: clamp(30px, 4vw, 48px);
   margin: 12px 0 19px;
   max-width: 850px
 }
@@ -103,9 +104,8 @@ h3,
   padding: 15px 23px;
   border: 1px solid transparent;
   font-size: 13px;
-  letter-spacing: .07em;
-  text-transform: uppercase;
-  font-weight: 800;
+  letter-spacing: .01em;
+  font-weight: 600;
   transition: transform .25s, background .25s, border-color .25s
 }
 
@@ -114,12 +114,12 @@ h3,
 }
 
 .btn-primary {
-  background: var(--orange);
-  color: #0b1820
+  background: var(--brand-blue);
+  color: var(--white)
 }
 
 .btn-primary:hover {
-  background: #f0b14f
+  background: var(--brand-blue-hover)
 }
 
 .btn-outline {
@@ -128,7 +128,7 @@ h3,
 }
 
 .btn-outline:hover {
-  border-color: var(--orange)
+  border-color: var(--accent)
 }
 
 .nav {
@@ -156,18 +156,14 @@ h3,
   gap: 11px
 }
 
-.logo-symbol {
-  display: grid;
-  place-items: center;
+.logo-image {
   background: #fff;
-  color: #306f97;
   width: 50px;
   height: 50px;
+  flex-shrink: 0;
+  object-fit: contain;
   border-radius: 50%;
-  border: 3px solid var(--teal);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 17px;
-  font-weight: 900
+  border: 2px solid var(--teal)
 }
 
 .logo-text {
@@ -196,11 +192,11 @@ h3,
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .06em;
-  font-weight: 800
+  font-weight: 600
 }
 
 .links a:hover {
-  color: var(--orange)
+  color: var(--accent)
 }
 
 .nav-cta {
@@ -228,9 +224,9 @@ h3,
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(90deg, rgba(3, 15, 23, .97) 0%, rgba(3, 15, 23, .83) 43%, rgba(3, 15, 23, .32) 78%), linear-gradient(0deg, #091c2b 0%, rgba(7, 19, 30, 0) 30%), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2200&q=85');
+  background-image: linear-gradient(90deg, rgba(7, 25, 40, .94) 0%, rgba(15, 45, 65, .76) 43%, rgba(7, 25, 40, .22) 78%), linear-gradient(0deg, #091c2b 0%, rgba(9, 28, 43, 0) 30%), url('assets/espaco.png');
   background-size: cover;
-  background-position: center 48%;
+  background-position: center 42%;
   transform: scale(1.03)
 }
 
@@ -255,7 +251,7 @@ h3,
   align-items: center;
   gap: 12px;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: .19em;
   text-transform: uppercase;
   color: #d6e7ee
@@ -265,19 +261,19 @@ h3,
   content: '';
   width: 26px;
   height: 3px;
-  background: var(--orange)
+  background: var(--cyan)
 }
 
 h1 {
-  font-size: clamp(79px, 11vw, 158px);
+  font-size: clamp(48px, 6.5vw, 88px);
   margin: 22px 0 16px;
-  max-width: 900px;
-  font-weight: 900
+  max-width: 760px;
+  line-height: 1.12
 }
 
 h1 em {
   font-style: normal;
-  color: var(--orange)
+  color: var(--accent)
 }
 
 .hero-copy {
@@ -328,7 +324,7 @@ h1 em {
   content: '';
   height: 1px;
   width: 70px;
-  background: var(--orange)
+  background: var(--cyan)
 }
 
 .about-grid {
@@ -339,39 +335,35 @@ h1 em {
 }
 
 .about-visual {
-  min-height: 570px;
-  position: relative
+  position: relative;
+  padding: 0 20px 20px 0
 }
 
 .about-visual img {
-  width: 86%;
-  height: 520px;
-  object-fit: cover;
-  border-radius: 8px;
-  filter: saturate(.8)
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 8px
 }
 
 .about-visual:before {
   content: '';
   position: absolute;
-  border: 3px solid var(--orange);
+  border: 3px solid var(--cyan);
   border-radius: 8px;
-  inset: 35px 7px 7px 35px
+  inset: 20px 0 0 20px
 }
 
 .about-tag {
-  position: absolute;
-  right: 0;
-  bottom: 15px;
-  background: #306f97;
+  position: relative;
+  margin: 20px 0 0 auto;
+  background: var(--brand-blue);
   padding: 20px 25px;
-  border-left: 5px solid var(--orange);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 25px;
+  border-left: 5px solid var(--accent);
+  font-weight: 600;
+  font-size: 18px;
   max-width: 230px;
-  line-height: 1
+  line-height: 1.4
 }
 
 .about-text p {
@@ -393,9 +385,9 @@ h1 em {
 }
 
 .feature-icon {
-  background: rgba(255, 146, 28, .1);
-  border: 1px solid rgba(255, 146, 28, .24);
-  color: var(--orange);
+  background: rgba(134, 201, 188, .1);
+  border: 1px solid rgba(134, 201, 188, .24);
+  color: var(--accent);
   width: 45px;
   height: 45px;
   flex-shrink: 0;
@@ -453,6 +445,11 @@ h1 em {
   transform: scale(1.08)
 }
 
+.program-card .program-image-group {
+  object-fit: contain;
+  object-position: top center
+}
+
 .program-card:after {
   content: '';
   position: absolute;
@@ -469,13 +466,13 @@ h1 em {
 }
 
 .program-num {
-  color: var(--orange);
-  font-weight: 900;
+  color: var(--accent);
+  font-weight: 600;
   font-size: 13px
 }
 
 .program-content h3 {
-  font-size: 39px;
+  font-size: 24px;
   margin: 9px 0 6px
 }
 
@@ -519,15 +516,15 @@ h1 em {
 }
 
 .plan-card.featured {
-  border-color: var(--orange);
-  background: linear-gradient(180deg, #306f97, #153b52)
+  border-color: var(--cyan);
+  background: linear-gradient(180deg, #164956, #123342)
 }
 
 .plan-ribbon {
   position: absolute;
   right: 14px;
   top: -15px;
-  background: var(--orange);
+  background: var(--accent);
   font-size: 10px;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -537,10 +534,7 @@ h1 em {
 }
 
 .plan-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 36px;
+  font-size: 24px;
   margin: 0
 }
 
@@ -552,11 +546,10 @@ h1 em {
 }
 
 .plan-price {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 42px;
-  font-weight: 800;
-  color: var(--orange);
-  line-height: 1
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 1.2
 }
 
 .plan-price small {
@@ -587,7 +580,7 @@ h1 em {
 
 .plan-list li:before {
   content: '✓';
-  color: var(--orange);
+  color: var(--accent);
   font-weight: 900
 }
 
@@ -625,9 +618,9 @@ h1 em {
 }
 
 .arrow:hover {
-  background: var(--orange);
-  color: #0c1d26;
-  border-color: var(--orange)
+  background: var(--brand-blue);
+  color: var(--white);
+  border-color: var(--brand-blue)
 }
 
 .gallery-track {
@@ -644,8 +637,8 @@ h1 em {
 }
 
 .gallery-item {
-  flex: 0 0 31%;
-  height: 370px;
+  flex: 0 0 48%;
+  aspect-ratio: 3 / 2;
   scroll-snap-align: start;
   position: relative;
   overflow: hidden;
@@ -654,9 +647,11 @@ h1 em {
 }
 
 .gallery-item img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform .5s
 }
 
@@ -683,15 +678,9 @@ h1 em {
   letter-spacing: .14em
 }
 
-.gallery-caption {
-  font-size: 11px;
-  color: #a2b3bc;
-  margin-top: 15px
-}
-
 .quote {
   padding: 95px 0;
-  background: linear-gradient(90deg, rgba(4, 20, 30, .94), rgba(4, 20, 30, .76)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=80') center/cover
+  background: linear-gradient(90deg, rgba(4, 20, 30, .94), rgba(4, 20, 30, .76)), url('assets/img.png') center 35%/cover
 }
 
 .quote-inner {
@@ -702,14 +691,14 @@ h1 em {
 }
 
 .quote h2 {
-  font-size: clamp(48px, 7vw, 88px);
+  font-size: clamp(32px, 4.5vw, 56px);
   max-width: 760px;
   margin: 15px 0
 }
 
 .quote h2 em {
   font-style: normal;
-  color: var(--orange)
+  color: var(--accent)
 }
 
 .location-grid {
@@ -796,8 +785,8 @@ h1 em {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: var(--orange);
-  color: #081720;
+  background: var(--brand-blue);
+  color: var(--white);
   display: grid;
   place-items: center;
   box-shadow: 0 7px 24px #0007;
@@ -830,20 +819,12 @@ h1 em {
     padding: 76px 0
   }
 
-  .about-visual {
-    min-height: 460px
-  }
-
-  .about-visual img {
-    height: 430px
-  }
-
   .program-content h3 {
-    font-size: 33px
+    font-size: 22px
   }
 
   .gallery-item {
-    flex-basis: 45%
+    flex-basis: 70%
   }
 }
 
@@ -856,7 +837,7 @@ h1 em {
     height: 69px
   }
 
-  .logo-symbol {
+  .logo-image {
     height: 43px;
     width: 43px
   }
@@ -898,8 +879,8 @@ h1 em {
   }
 
   .hero-bg {
-    background-image: linear-gradient(90deg, rgba(3, 15, 23, .88), rgba(3, 15, 23, .4)), linear-gradient(0deg, #091c2b, transparent 36%), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1300&q=85');
-    background-position: 60% center
+    background-image: linear-gradient(90deg, rgba(7, 25, 40, .87), rgba(7, 25, 40, .52)), linear-gradient(0deg, #091c2b, transparent 36%), url('assets/bannermobile.png');
+    background-position: center
   }
 
   .hero .container {
@@ -907,7 +888,7 @@ h1 em {
   }
 
   .hero h1 {
-    font-size: clamp(72px, 17vw, 111px)
+    font-size: clamp(38px, 10vw, 56px)
   }
 
   .hero-copy {
@@ -935,14 +916,6 @@ h1 em {
     order: 2
   }
 
-  .about-visual {
-    min-height: 450px
-  }
-
-  .about-visual img {
-    height: 410px
-  }
-
   .features {
     gap: 17px
   }
@@ -961,8 +934,7 @@ h1 em {
   }
 
   .gallery-item {
-    flex-basis: 80%;
-    height: 330px
+    flex-basis: 90%
   }
 
   .gallery-header {
@@ -997,7 +969,7 @@ h1 em {
   }
 
   .section-title {
-    font-size: 57px
+    font-size: clamp(30px, 7.5vw, 42px)
   }
 }
 
@@ -1011,14 +983,14 @@ h1 em {
   }
 }
 
-/* Cores institucionais amostradas do logotipo CFBA: azul, turquesa, verde água e laranja */
+/* Paleta inspirada no perfil do CFBA: azul-petróleo, turquesa e verde-água. */
 .nav {
   border-top: 3px solid var(--brand-blue)
 }
 
 .feature-icon {
-  background: rgba(96, 167, 164, .14);
-  border-color: rgba(96, 167, 164, .33);
+  background: rgba(134, 201, 188, .14);
+  border-color: rgba(134, 201, 188, .33);
   color: var(--teal)
 }
 
@@ -1031,12 +1003,8 @@ h1 em {
   border: 2px solid var(--teal)
 }
 
-.hero-bg {
-  background-image: linear-gradient(90deg, rgba(7, 25, 40, .98) 0%, rgba(15, 45, 65, .84) 43%, rgba(7, 25, 40, .26) 78%), linear-gradient(0deg, #091c2b 0%, rgba(9, 28, 43, 0) 30%), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2200&q=85')
-}
-
-.text-orange {
-  color: var(--orange)
+.text-accent {
+  color: var(--accent)
 }
 
 .quote-copy {

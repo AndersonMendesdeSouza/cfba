@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -19,7 +19,7 @@
 <body>
   <header class="nav">
     <div class="container nav-inner"><a class="logo" href="#inicio" aria-label="CFBA, voltar ao início">
-        <div class="logo-symbol">CFBA</div>
+        <img class="logo-image" src="assets/logo.jpg" alt="" width="50" height="50">
         <div class="logo-text">CFBA<small>CENTRO FITNESS BURITI ALEGRE</small></div>
       </a>
       <nav class="links" id="nav-links" aria-label="Menu principal"><a href="#sobre">Sobre nós</a><a
@@ -34,7 +34,7 @@
     <section class="hero" id="inicio">
       <div class="hero-bg"></div>
       <div class="container"><span class="hero-kicker">Centro Fitness Buriti Alegre</span>
-        <h1>SEU LIMITE<br>É SÓ O <em>COMEÇO.</em></h1>
+        <h1>Seu limite<br>é só o <em>começo.</em></h1>
         <p class="hero-copy">Mais que treino. Uma comunidade que transforma histórias através do movimento. Descubra sua
           força no CFBA.</p>
         <div class="hero-actions"><a href="#planos" class="btn btn-primary">Conheça nossos planos <span>↗</span></a><a
@@ -48,12 +48,12 @@
     <section class="section" id="sobre">
       <div class="container about-grid">
         <div class="about-visual"><img
-            src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80"
-            alt="Imagem ilustrativa de treino em academia" loading="lazy">
-          <div class="about-tag">VOCÊ É MAIS FORTE DO QUE IMAGINA.</div>
+            src="assets/alunos.png" width="1214" height="510"
+            alt="Turma do CFBA reunida no espaço de treino" loading="lazy">
+          <div class="about-tag">Você é mais forte do que imagina.</div>
         </div>
         <div class="about-text"><span class="eyebrow">Conheça o nosso espaço</span>
-          <h2 class="section-title">BEM-VINDO À <span class="text-orange">FAMÍLIA CFBA.</span></h2>
+          <h2 class="section-title">Bem-vindo à <span class="text-accent">família CFBA.</span></h2>
           <p>Todo treino é uma nova oportunidade de evoluir. No Centro Fitness Buriti Alegre, o movimento conecta
             pessoas, constrói confiança e inspira novos desafios.</p>
           <p>Aqui, a sua jornada importa. Venha conhecer o ambiente, sentir a energia dos treinos e descobrir o que você
@@ -81,31 +81,31 @@
     </section>
     <section class="section programs" id="modalidades">
       <div class="container"><span class="eyebrow">A energia que move você</span>
-        <h2 class="section-title">TREINE. EVOLUA.<br><span class="text-orange">SUPERE.</span></h2>
+        <h2 class="section-title">Treine. Evolua.<br><span class="text-accent">Supere.</span></h2>
         <p class="section-subtitle">Conheça diferentes aspectos de uma rotina de treinamento funcional. Consulte a
           equipe para saber as modalidades e aulas disponíveis.</p>
         <div class="program-grid">
           <article class="program-card"><img
-              src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=900&q=80"
-              alt="Imagem ilustrativa de treino de força" loading="lazy">
+              src="assets/aluno.png" width="952" height="696"
+              alt="Atleta durante exercício com barra em uma competição" loading="lazy">
             <div class="program-content"><span class="program-num">01 / FORÇA</span>
-              <h3>CONSTRUA SUA FORÇA</h3>
+              <h3>Construa sua força</h3>
               <p>Desenvolva disciplina e desafie seus próprios limites.</p>
             </div>
           </article>
           <article class="program-card"><img
-              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80"
-              alt="Imagem ilustrativa de exercício físico" loading="lazy">
+              src="assets/espaco.png" width="1244" height="806"
+              alt="Estrutura de treino do CFBA com barras e argolas" loading="lazy">
             <div class="program-content"><span class="program-num">02 / CONDICIONAMENTO</span>
-              <h3>MANTENHA O RITMO</h3>
+              <h3>Mantenha o ritmo</h3>
               <p>Movimento, intensidade e evolução em cada etapa.</p>
             </div>
           </article>
-          <article class="program-card"><img
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80"
-              alt="Imagem ilustrativa de treinamento" loading="lazy">
+          <article class="program-card"><img class="program-image-group"
+              src="assets/campe.png" width="1246" height="932"
+              alt="Grupo com a bandeira do CFBA e troféus em um evento esportivo" loading="lazy">
             <div class="program-content"><span class="program-num">03 / SUPERAÇÃO</span>
-              <h3>EVOLUA TODO DIA</h3>
+              <h3>Evolua todo dia</h3>
               <p>Transforme pequenas conquistas em grandes resultados.</p>
             </div>
           </article>
@@ -115,15 +115,16 @@
     <section class="section plans" id="planos">
       <div class="container">
         <div class="plans-head"><span class="eyebrow">Seu próximo passo começa aqui</span>
-          <h2 class="section-title">ESCOLHA SEU <span class="text-orange">PLANO.</span></h2>
-          <p class="section-subtitle">Entre em contato com a equipe para consultar valores, horários e condições atuais.
+          <h2 class="section-title">Escolha seu <span class="text-accent">plano.</span></h2>
+          <p class="section-subtitle">Valores ilustrativos para apresentação. Consulte a equipe para confirmar preços,
+            horários e condições atuais.
           </p>
         </div>
         <div class="plans-grid">
           <article class="plan-card">
-            <h3 class="plan-title">PLANO MENSAL</h3>
+            <h3 class="plan-title">Plano mensal</h3>
             <p class="plan-intro">Flexibilidade para começar sua jornada.</p>
-            <div class="plan-price">CONSULTE<small>Valor diretamente com a equipe</small></div>
+            <div class="plan-price">R$ 120,00<small>Por mês · valor de exemplo</small></div>
             <ul class="plan-list">
               <li>Consulte os horários disponíveis</li>
               <li>Confira as condições de matrícula</li>
@@ -132,9 +133,9 @@
               rel="noopener noreferrer">Consultar plano ↗</a>
           </article>
           <article class="plan-card featured"><span class="plan-ribbon">DESTAQUE</span>
-            <h3 class="plan-title">PLANO TRIMESTRAL</h3>
+            <h3 class="plan-title">Plano trimestral</h3>
             <p class="plan-intro">Mais tempo para criar consistência.</p>
-            <div class="plan-price">CONSULTE<small>Valor diretamente com a equipe</small></div>
+            <div class="plan-price">R$ 330,00<small>Por 3 meses · valor de exemplo</small></div>
             <ul class="plan-list">
               <li>Consulte disponibilidade e condições</li>
               <li>Planeje sua evolução</li>
@@ -143,9 +144,9 @@
               rel="noopener noreferrer">Consultar plano ↗</a>
           </article>
           <article class="plan-card">
-            <h3 class="plan-title">PLANO SEMESTRAL</h3>
+            <h3 class="plan-title">Plano semestral</h3>
             <p class="plan-intro">Compromisso com sua evolução.</p>
-            <div class="plan-price">CONSULTE<small>Valor diretamente com a equipe</small></div>
+            <div class="plan-price">R$ 600,00<small>Por 6 meses · valor de exemplo</small></div>
             <ul class="plan-list">
               <li>Consulte condições e disponibilidade</li>
               <li>Construa uma rotina de treinos</li>
@@ -160,7 +161,7 @@
       <div class="container">
         <div class="gallery-header">
           <div><span class="eyebrow">Viva essa experiência</span>
-            <h2 class="section-title">NOSSO <span class="text-orange">UNIVERSO.</span></h2>
+            <h2 class="section-title">Nosso <span class="text-accent">universo.</span></h2>
             <p class="section-subtitle">Um pouco da energia que espera por você.</p>
           </div>
           <div class="gallery-controls"><button class="arrow" id="gallery-prev"
@@ -169,39 +170,37 @@
         </div>
         <div class="gallery-track" id="gallery-track">
           <div class="gallery-item"><img
-              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=950&q=80"
-              alt="Foto ilustrativa de academia, substituir por foto real do CFBA" loading="lazy">
+              src="assets/aluno.png" width="952" height="696"
+              alt="Atleta durante exercício com barra em uma competição" loading="lazy">
             <p>Energia em movimento</p>
           </div>
           <div class="gallery-item"><img
-              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=950&q=80"
-              alt="Foto ilustrativa de espaço de academia, substituir por foto real" loading="lazy">
+              src="assets/espaco.png" width="1244" height="806"
+              alt="Espaço de treino do CFBA com a marca na parede" loading="lazy">
             <p>O espaço de treino</p>
           </div>
           <div class="gallery-item"><img
-              src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=950&q=80"
-              alt="Foto ilustrativa de exercício, substituir por foto real" loading="lazy">
+              src="assets/campe.png" width="1246" height="932"
+              alt="Grupo com a bandeira do CFBA e troféus em um evento esportivo" loading="lazy">
             <p>Treino e superação</p>
           </div>
           <div class="gallery-item"><img
-              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=950&q=80"
-              alt="Foto ilustrativa de treino, substituir por foto real" loading="lazy">
+              src="assets/alunos.png" width="1214" height="510"
+              alt="Turma do CFBA reunida no espaço de treino" loading="lazy">
             <p>Uma jornada de evolução</p>
           </div>
           <div class="gallery-item"><img
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=950&q=80"
-              alt="Foto ilustrativa de academia, substituir por foto real" loading="lazy">
+              src="assets/img.png" width="1196" height="802"
+              alt="Grupo com camisetas do CFBA reunido ao ar livre" loading="lazy">
             <p>Desafie seus limites</p>
           </div>
         </div>
-        <p class="gallery-caption">Imagens demonstrativas para o layout. Substituir pelas fotografias oficiais do CFBA
-          antes da publicação.</p>
       </div>
     </section>
     <section class="quote">
       <div class="container quote-inner">
         <div><span class="eyebrow">Seu momento chegou</span>
-          <h2>SEU PRÓXIMO NÍVEL <em>COMEÇA AQUI.</em></h2>
+          <h2>Seu próximo nível <em>começa aqui.</em></h2>
           <p class="quote-copy">Venha conhecer o CFBA e descubra uma nova forma de se superar.</p>
         </div><a class="btn btn-primary" href="https://www.instagram.com/cfba_21/" target="_blank"
           rel="noopener noreferrer">Falar com a equipe ↗</a>
@@ -210,7 +209,7 @@
     <section class="section" id="localizacao">
       <div class="container location-grid">
         <div><span class="eyebrow">Estamos esperando por você</span>
-          <h2 class="section-title">VENHA NOS <span class="text-orange">CONHECER.</span></h2>
+          <h2 class="section-title">Venha nos <span class="text-accent">conhecer.</span></h2>
           <p class="section-subtitle">O seu próximo treino pode começar com uma visita. Confira nossa localização e
             entre em contato para saber mais.</p>
           <div class="address">
@@ -236,7 +235,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top"><a class="logo" href="#inicio">
-          <div class="logo-symbol">CFBA</div>
+          <img class="logo-image" src="assets/logo.jpg" alt="" width="50" height="50">
           <div class="logo-text">CFBA<small>CENTRO FITNESS BURITI ALEGRE</small></div>
         </a>
         <div class="social"><a href="https://www.instagram.com/cfba_21/" target="_blank"
