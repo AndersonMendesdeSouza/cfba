@@ -777,7 +777,7 @@ h1 em {
   gap: 20px
 }
 
-.floating-instagram {
+.floating-whatsapp {
   position: fixed;
   bottom: 23px;
   right: 23px;
@@ -785,17 +785,23 @@ h1 em {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: var(--brand-blue);
+  background: #128c4a;
+  border: 2px solid rgba(255, 255, 255, .2);
   color: var(--white);
   display: grid;
   place-items: center;
   box-shadow: 0 7px 24px #0007;
-  font-weight: 900;
-  font-size: 20px
+  transition: transform .2s, background .2s
 }
 
-.floating-instagram:hover {
-  transform: scale(1.07)
+.floating-whatsapp:hover {
+  transform: scale(1.07);
+  background: #0f763e
+}
+
+.floating-whatsapp:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 4px
 }
 
 @media(max-width:960px) {
@@ -996,11 +1002,6 @@ h1 em {
 
 .about-tag {
   background: var(--brand-blue)
-}
-
-.floating-instagram {
-  background: var(--brand-blue);
-  border: 2px solid var(--teal)
 }
 
 .text-accent {
