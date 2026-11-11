@@ -25,26 +25,39 @@
       <nav class="links" id="nav-links" aria-label="Menu principal"><a href="#sobre">Sobre nós</a><a
           href="#modalidades">Treinos</a><a href="#planos">Planos</a><a href="#galeria">Galeria</a><a
           href="#localizacao">Localização</a></nav><a class="btn btn-primary nav-cta"
-        href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20CFBA%20e%20gostaria%20de%20fazer%20uma%20aula%20experimental." target="_blank" rel="noopener noreferrer">Conhecer o CFBA ↗</a><button
+        href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20CFBA%20e%20gostaria%20de%20fazer%20uma%20aula%20experimental." target="_blank" rel="noopener noreferrer">Fale com a equipe ↗</a><button
         class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-controls="nav-links"
         aria-expanded="false">☰</button>
     </div>
   </header>
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-bg"></div>
-      <div class="container"><span class="hero-kicker">Centro Fitness Buriti Alegre</span>
-        <h1>Seu limite<br>é só o <em>começo.</em></h1>
-        <p class="hero-copy">Mais que treino. Uma comunidade que transforma histórias através do movimento. Descubra sua
-          força no CFBA.</p>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content"><span class="hero-kicker">Centro Fitness Buriti Alegre</span>
+        <h1 id="hero-title"><em>Supere seus<br>limites.</em><br>Vá além.</h1>
+        <p class="hero-copy">Descubra sua força em cada treino. No CFBA, você encontra a energia e a comunidade
+          para ir mais longe. Seu próximo passo começa aqui.</p>
         <div class="hero-actions"><a
             href="https://wa.me/5564999999687?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20CFBA%20e%20gostaria%20de%20fazer%20uma%20aula%20experimental."
-            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Agendar aula experimental <span>↗</span></a><a
-            href="#sobre" class="btn btn-outline">Explore o CFBA ↓</a></div>
+            class="btn btn-primary" target="_blank" rel="noopener noreferrer">Agendar aula experimental <span aria-hidden="true">↗</span></a><a
+            href="#sobre" class="hero-discover"><span class="hero-discover-icon" aria-hidden="true">↗</span>Conheça o CFBA</a></div>
       </div>
       <div class="hero-bottom">
-        <div class="container"><span>Buriti Alegre • Goiás</span><span class="scroll-indicator">Role para
-            descobrir</span></div>
+        <div class="container">
+          <div class="hero-community">
+            <a class="hero-social" href="https://www.instagram.com/cfba_21/" target="_blank" rel="noopener noreferrer"
+              aria-label="Acompanhe o CFBA no Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              Acompanhe o CFBA
+            </a>
+            <span>Buriti Alegre • Goiás</span>
+          </div>
+          <a href="#sobre" class="scroll-indicator">Conheça nossa energia <span aria-hidden="true">↓</span></a>
+        </div>
       </div>
     </section>
     <section class="section" id="sobre">
@@ -52,30 +65,10 @@
         <div class="about-visual"><img
             src="assets/alunos.png" width="1214" height="510"
             alt="Turma do CFBA reunida no espaço de treino" loading="lazy">
-          <div class="about-tag">Você é mais forte do que imagina.</div>
         </div>
-        <div class="about-text"><span class="eyebrow">Conheça o nosso espaço</span>
-          <h2 class="section-title">Bem-vindo à <span class="text-accent">família CFBA.</span></h2>
-          <p>Todo treino é uma nova oportunidade de evoluir. No Centro Fitness Buriti Alegre, o movimento conecta
-            pessoas, constrói confiança e inspira novos desafios.</p>
-          <div class="features">
-            <div class="feature">
-              <div class="feature-icon">⚡</div>
-              <div><strong>Desafie-se</strong><small>Um passo de cada vez, sempre em evolução.</small></div>
-            </div>
-            <div class="feature">
-              <div class="feature-icon">◆</div>
-              <div><strong>Faça parte</strong><small>Uma comunidade que cresce junta.</small></div>
-            </div>
-            <div class="feature">
-              <div class="feature-icon">↗</div>
-              <div><strong>Vá além</strong><small>Construa novos objetivos a cada treino.</small></div>
-            </div>
-            <div class="feature">
-              <div class="feature-icon">♥</div>
-              <div><strong>Movimente-se</strong><small>Mais disposição para a rotina.</small></div>
-            </div>
-          </div>
+        <div class="about-text">
+          <h2 class="section-title">Faça parte da <span class="text-accent">família CFBA.</span></h2>
+          <p>Um espaço para treinar, superar desafios e evoluir junto.</p>
         </div>
       </div>
     </section>
